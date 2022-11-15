@@ -1,11 +1,11 @@
 <template>
 
-    <body class="show" >
+    <body class="show">
         <!-- Begin page -->
         <div class="wrapper">
 
             <navbar></navbar>
-            
+
             <div v-if="layout != 'topnav'">
                 <!-- ========== Left Sidebar Start ========== -->
                 <sidebar></sidebar>
@@ -29,11 +29,6 @@
 
         <!-- Theme Settings -->
         <settings></settings>
-
-
-        <!-- settings mask -->
-        <!-- <div :class="{ 'offcanvas-backdrop fade show': isShow }"></div> -->
-
     </body>
 
 </template>

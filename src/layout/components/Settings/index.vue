@@ -3,8 +3,8 @@
         id="theme-settings-offcanvas">
         <div class="d-flex align-items-center bg-primary p-3 offcanvas-header">
             <h5 class="text-white m-0">Theme Settings</h5>
-            <button type="button" class="btn-close btn-close-white ms-auto" data-bs-dismiss="offcanvas" @click="toggleSettings"
-                aria-label="Close"></button>
+            <button type="button" class="btn-close btn-close-white ms-auto" data-bs-dismiss="offcanvas"
+                @click="toggleSettings" aria-label="Close"></button>
         </div>
 
         <div class="offcanvas-body p-0">
@@ -22,7 +22,8 @@
                                         <h5 class="mt-0 font-16 fw-bold mb-3">Choose Layout</h5>
                                         <div class="row">
                                             <div class="col-4">
-                                                <div class="form-check card-radio" @click="changeSettings('data-layout', 'sidebar')">
+                                                <div class="form-check card-radio"
+                                                    @click="changeSettings('data-layout', 'sidebar')">
                                                     <input id="customizer-layout01" name="data-layout" type="radio"
                                                         value="vertical" class="form-check-input">
                                                     <label class="form-check-label p-0 avatar-md w-100"
@@ -54,7 +55,8 @@
                                                 <h5 class="font-14 text-center text-muted mt-2">Vertical</h5>
                                             </div>
                                             <div class="col-4">
-                                                <div class="form-check card-radio" @click="changeSettings('data-layout', 'topnav')">
+                                                <div class="form-check card-radio"
+                                                    @click="changeSettings('data-layout', 'topnav')">
                                                     <input id="customizer-layout02" name="data-layout" type="radio"
                                                         value="horizontal" class="form-check-input">
                                                     <label class="form-check-label p-0 avatar-md w-100"
@@ -82,7 +84,8 @@
                                         <div class="colorscheme-cardradio">
                                             <div class="row">
                                                 <div class="col-4">
-                                                    <div class="form-check card-radio" @click="changeSettings('data-theme', 'light')">
+                                                    <div class="form-check card-radio"
+                                                        @click="changeSettings('data-theme', 'light')">
                                                         <input class="form-check-input" type="radio" name="data-theme"
                                                             id="layout-color-light" value="light">
                                                         <label class="form-check-label p-0 avatar-md w-100"
@@ -115,7 +118,8 @@
                                                 </div>
 
                                                 <div class="col-4">
-                                                    <div class="form-check card-radio" @click="changeSettings('data-theme', 'dark')">
+                                                    <div class="form-check card-radio"
+                                                        @click="changeSettings('data-theme', 'dark')">
                                                         <input class="form-check-input" type="radio" name="data-theme"
                                                             id="layout-color-dark" value="dark">
                                                         <label class="form-check-label p-0 avatar-md w-100 bg-black"
@@ -155,7 +159,8 @@
 
                                             <div class="row">
                                                 <div class="col-4">
-                                                    <div class="form-check card-radio" @click="changeSettings('data-layout-mode', 'fluid')">
+                                                    <div class="form-check card-radio"
+                                                        @click="changeSettings('data-layout-mode', 'fluid')">
                                                         <input class="form-check-input" type="radio"
                                                             name="data-layout-mode" id="layout-mode-fluid"
                                                             value="fluid">
@@ -188,7 +193,8 @@
                                                     <h5 class="font-14 text-center text-muted mt-2">Fluid</h5>
                                                 </div>
                                                 <div class="col-4" id="layout-boxed">
-                                                    <div class="form-check card-radio" @click="changeSettings('data-layout-mode', 'boxed')">
+                                                    <div class="form-check card-radio"
+                                                        @click="changeSettings('data-layout-mode', 'boxed')">
                                                         <input class="form-check-input" type="radio"
                                                             name="data-layout-mode" id="layout-mode-boxed"
                                                             value="boxed">
@@ -222,7 +228,8 @@
                                                 </div>
 
                                                 <div class="col-4" id="layout-detached">
-                                                    <div class="form-check sidebar-setting card-radio" @click="changeSettings('data-layout-mode', 'detached')">
+                                                    <div class="form-check sidebar-setting card-radio"
+                                                        @click="changeSettings('data-layout-mode', 'detached')">
                                                         <input class="form-check-input" type="radio"
                                                             name="data-layout-mode" id="data-layout-detached"
                                                             value="detached">
@@ -266,7 +273,8 @@
 
                                         <div class="row">
                                             <div class="col-4">
-                                                <div class="form-check card-radio" @click="changeSettings('data-topbar-color', 'light')">
+                                                <div class="form-check card-radio"
+                                                    @click="changeSettings('data-topbar-color', 'light')">
                                                     <input class="form-check-input" type="radio"
                                                         name="data-topbar-color" id="topbar-color-light" value="light">
                                                     <label class="form-check-label p-0 avatar-md w-100"
@@ -298,7 +306,8 @@
                                                 <h5 class="font-14 text-center text-muted mt-2">Light</h5>
                                             </div>
                                             <div class="col-4">
-                                                <div class="form-check card-radio" @click="changeSettings('data-topbar-color', 'dark')">
+                                                <div class="form-check card-radio"
+                                                    @click="changeSettings('data-topbar-color', 'dark')">
                                                     <input class="form-check-input" type="radio"
                                                         name="data-topbar-color" id="topbar-color-dark" value="dark">
                                                     <label class="form-check-label p-0 avatar-md w-100"
@@ -336,7 +345,8 @@
 
                                             <div class="row">
                                                 <div class="col-4">
-                                                    <div class="form-check sidebar-setting card-radio" @click="changeSettings('data-sidenav-color', 'light')">
+                                                    <div class="form-check sidebar-setting card-radio"
+                                                        @click="changeSettings('data-sidenav-color', 'light')">
                                                         <input class="form-check-input" type="radio"
                                                             name="data-sidenav-color" id="leftbar-color-light"
                                                             value="light">
@@ -369,7 +379,8 @@
                                                     <h5 class="font-14 text-center text-muted mt-2">Light</h5>
                                                 </div>
                                                 <div class="col-4">
-                                                    <div class="form-check sidebar-setting card-radio" @click="changeSettings('data-sidenav-color', 'dark')">
+                                                    <div class="form-check sidebar-setting card-radio"
+                                                        @click="changeSettings('data-sidenav-color', 'dark')">
                                                         <input class="form-check-input" type="radio"
                                                             name="data-sidenav-color" id="leftbar-color-dark"
                                                             value="dark">
@@ -402,7 +413,8 @@
                                                     <h5 class="font-14 text-center text-muted mt-2">Dark</h5>
                                                 </div>
                                                 <div class="col-4">
-                                                    <div class="form-check sidebar-setting card-radio" @click="changeSettings('data-sidenav-color', 'brand')">
+                                                    <div class="form-check sidebar-setting card-radio"
+                                                        @click="changeSettings('data-sidenav-color', 'brand')">
                                                         <input class="form-check-input" type="radio"
                                                             name="data-sidenav-color" id="leftbar-color-default"
                                                             value="default">
@@ -442,7 +454,8 @@
 
                                             <div class="row">
                                                 <div class="col-4">
-                                                    <div class="form-check sidebar-setting card-radio" @click="changeSettings('data-sidenav-size', 'default')">
+                                                    <div class="form-check sidebar-setting card-radio"
+                                                        @click="changeSettings('data-sidenav-size', 'default')">
                                                         <input class="form-check-input" type="radio"
                                                             name="data-sidenav-size" id="leftbar-size-default"
                                                             value="default">
@@ -476,7 +489,8 @@
                                                 </div>
 
                                                 <div class="col-4">
-                                                    <div class="form-check sidebar-setting card-radio" @click="changeSettings('data-sidenav-size', 'compact')">
+                                                    <div class="form-check sidebar-setting card-radio"
+                                                        @click="changeSettings('data-sidenav-size', 'compact')">
                                                         <input class="form-check-input" type="radio"
                                                             name="data-sidenav-size" id="leftbar-size-compact"
                                                             value="compact">
@@ -510,7 +524,8 @@
                                                 </div>
 
                                                 <div class="col-4">
-                                                    <div class="form-check sidebar-setting card-radio" @click="changeSettings('data-sidenav-size', 'condensed')">
+                                                    <div class="form-check sidebar-setting card-radio"
+                                                        @click="changeSettings('data-sidenav-size', 'condensed')">
                                                         <input class="form-check-input" type="radio"
                                                             name="data-sidenav-size" id="leftbar-size-small"
                                                             value="condensed">
@@ -544,7 +559,8 @@
                                                 </div>
 
                                                 <div class="col-4">
-                                                    <div class="form-check sidebar-setting card-radio" @click="changeSettings('data-sidenav-size', 'sm-hover')">
+                                                    <div class="form-check sidebar-setting card-radio"
+                                                        @click="changeSettings('data-sidenav-size', 'sm-hover')">
                                                         <input class="form-check-input" type="radio"
                                                             name="data-sidenav-size" id="leftbar-size-small-hover"
                                                             value="sm-hover">
@@ -578,7 +594,8 @@
                                                 </div>
 
                                                 <div class="col-4">
-                                                    <div class="form-check sidebar-setting card-radio" @click="changeSettings('data-sidenav-size', 'full')">
+                                                    <div class="form-check sidebar-setting card-radio"
+                                                        @click="changeSettings('data-sidenav-size', 'full')">
                                                         <input class="form-check-input" type="radio"
                                                             name="data-sidenav-size" id="leftbar-size-full"
                                                             value="full">
@@ -610,12 +627,14 @@
                                             <div class="btn-group radio" role="group">
                                                 <input type="radio" class="btn-check" name="data-layout-position"
                                                     id="layout-position-fixed" value="fixed">
-                                                <label class="btn btn-light w-sm" @click="changeSettings('data-layout-position', 'fixed')"
+                                                <label class="btn btn-light w-sm"
+                                                    @click="changeSettings('data-layout-position', 'fixed')"
                                                     for="layout-position-fixed">Fixed</label>
 
                                                 <input type="radio" class="btn-check" name="data-layout-position"
                                                     id="layout-position-scrollable" value="scrollable">
-                                                <label class="btn btn-light w-sm ms-0" @click="changeSettings('data-layout-position', 'scrollable')"
+                                                <label class="btn btn-light w-sm ms-0"
+                                                    @click="changeSettings('data-layout-position', 'scrollable')"
                                                     for="layout-position-scrollable">Scrollable</label>
                                             </div>
                                         </div>
@@ -625,8 +644,8 @@
                                                 <label class="font-16 fw-bold m-0" for="sidebaruser-check">Sidebar User
                                                     Info</label>
                                                 <div class="form-check form-switch">
-                                                    <input type="checkbox" class="form-check-input" name="sidebar-user" v-model="checkedSidebarUser"
-                                                        id="sidebaruser-check">
+                                                    <input type="checkbox" class="form-check-input" name="sidebar-user"
+                                                        v-model="checkedSidebarUser" id="sidebaruser-check">
                                                 </div>
                                             </div>
                                         </div>
@@ -661,29 +680,21 @@
     </div>
 </template>
 <script>
-import { mapGetters } from "vuex";
 export default {
-    data(){
+    data() {
         return {
             checkedSidebarUser: true
         }
     },
-    computed: {
-        ...mapGetters(["settings"]),
-        isOpened() {
-            console.log(this.settings.opened)
-            return this.settings.opened
-        }
-    },
     watch: {
         'checkedSidebarUser': {
-            handler: function (val, oldValue){
+            handler: function (val, oldValue) {
                 this.changeSettings('data-sidenav-user', val)
             }
         }
     },
     methods: {
-        changeSettings(name, val){
+        changeSettings(name, val) {
             this.$store.dispatch("app/changeSettings", {
                 name: name,
                 val, val
@@ -692,27 +703,6 @@ export default {
         toggleSettings() {
             this.$store.dispatch("app/toggleSettings");
         },
-        changeColorScheme(color) {
-            this.$store.dispatch("app/changeColorScheme", color);
-        },
-        changeLayoutMode(mode) {
-            this.$store.dispatch("app/changeLayoutMode", mode);
-        },
-        changeTopbarColor(color) {
-            this.$store.dispatch("app/changeTopbarColor", color);
-        },
-        changeSidebarColor(color) {
-            this.$store.dispatch("app/changeSidebarColor", color);
-        },
-        changeSidebarSize(size) {
-            this.$store.dispatch("app/changeSidebarSize", size);
-        },
-        changeLayoutPosition(position) {
-            this.$store.dispatch("app/changeLayoutPosition", position);
-        },
-        changeSidebarUserInfo(userInfo) {
-            this.$store.dispatch("app/changeSidebarUserInfo", userInfo);
-        }
     }
 }
 </script>

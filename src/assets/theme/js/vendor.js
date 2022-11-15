@@ -5441,6 +5441,12 @@
 	class li extends z {
 		constructor(t, e) {
 			super(t, e), this._popper = null, this._parent = this._element.parentNode, this._menu = Q.findOne(Ze, this._parent), this._inNavbar = this._detectNavbar()
+			if(!this._menu) {
+				this._menu = this._element
+			}
+			console.log(this._menu)
+			console.log(Q.findOne(Ze, this._parent))
+			console.log(Q.findOne(Ze, this._parent))
 		}
 		static get Default() {
 			return ri

@@ -773,7 +773,7 @@ select:disabled{
     display:none!important
 }
 [type=button],[type=reset],[type=submit],button{
-    -webkit-appearance:button
+   appearance: button
 }
 [type=button]:not(:disabled),[type=reset]:not(:disabled),[type=submit]:not(:disabled),button:not(:disabled){
     cursor:pointer
@@ -815,21 +815,21 @@ legend+*{
 }
 [type=search]{
     outline-offset:-2px;
-    -webkit-appearance:textfield
+    appearance:textfield
 }
 ::-webkit-search-decoration{
-    -webkit-appearance:none
+    appearance:none
 }
 ::-webkit-color-swatch-wrapper{
     padding:0
 }
 ::-webkit-file-upload-button{
     font:inherit;
-    -webkit-appearance:button
+    appearance:button
 }
 ::file-selector-button{
     font:inherit;
-    -webkit-appearance:button
+    appearance:button
 }
 output{
     display:inline-block
@@ -12811,7 +12811,7 @@ html[data-layout-mode=detached]:not([data-layout=topnav]) .leftside-menu{
     z-index:10
 }
 html[data-layout-mode=detached]:not([data-layout=topnav]) .leftbar-user{
-    /* background:url(../images/waves.png) no-repeat */
+    background:url(../img/help-icon.svg) no-repeat
 }
 html[data-layout-mode=detached]:not([data-layout=topnav])[data-sidenav-size=condensed] .content-page{
     min-height:1700px

@@ -3,20 +3,19 @@
 import Vue from 'vue'
 import App from './App'
 import store from './store/index.js'
-import router from './router'
-
+import router from './router/index'
 
 import '@mdi/font/css/materialdesignicons.css'
+import './assets/theme/css/index.css'
 import 'remixicon/fonts/remixicon.css'
+
 import '@/utils/utils.js'
 import '@/assets/theme/js/vendor.js'
+import '@/promission.js'
+import '@/utils/utils.js'
 
-import './assets/theme/css/index.css'
+Vue.config.productionTip = false  
 
-
-Vue.config.productionTip = false
-console.log("888")
-console.log(store)
 
 /* eslint-disable no-new */
 new Vue({

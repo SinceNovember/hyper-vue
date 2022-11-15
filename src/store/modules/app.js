@@ -1,4 +1,4 @@
-import { addElementCls, changeElementVal } from "../../utils/utils"
+import { addElementCls, changeElementVal } from "@/utils/utils"
 
 const state = {
   sidebar: {
@@ -25,9 +25,9 @@ const mutations = {
     if (state.settings.sidebarSize.opened == 'full') {
       state.settings.sidebarSize.collapsed = 'full'
       if (state.sidebar.opened) {
-        removeElementCls('sidebar-enable')
+        this.removeElementCls('sidebar-enable')
       } else {
-        addElementCls('sidebar-enable')
+        this.addElementCls('sidebar-enable')
       }
     }
     changeElementVal(state.sidebar.name,

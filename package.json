@@ -11,8 +11,11 @@
   },
   "dependencies": {
     "@mdi/font": "^7.0.96",
+    "axios": "^1.1.3",
     "boxicons": "^2.1.4",
+    "js-cookie": "^3.0.1",
     "remixicon": "^2.5.0",
+    "screenfull": "^4.2.0",
     "vue": "^2.6.11",
     "vue-router": "^3.0.1",
     "vue-unicons": "^3.3.1",
