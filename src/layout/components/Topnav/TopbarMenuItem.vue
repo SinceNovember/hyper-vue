@@ -1,7 +1,7 @@
 <template>
-       <div class="dropdown-menu" aria-labelledby="topnav-pages">
+    <div class="dropdown-menu" aria-labelledby="topnav-pages">
         <template v-for="(subMenu, index) in route.children">
-            <div v-if="hasShowingChild(subMenu.children, subMenu)" class="dropdown">
+            <div v-if="subMenu.children.length > 0" class="dropdown">
                 <a class="dropdown-item dropdown-toggle arrow-none" href="#" id="topnav-auth" role="button"
                     data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     {{ subMenu.meta.title }}

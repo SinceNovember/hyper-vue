@@ -21,6 +21,7 @@ router.beforeEach(async (to, from, next) => {
     } else {
       if (!getRouter) {
         fetchAllMenus().then(res => {//从数据库获取菜单列表
+          console.log(res)
           res = res.data
           if (res.data && res.data.length > 0) {
             getRouter = res.data
@@ -29,7 +30,7 @@ router.beforeEach(async (to, from, next) => {
             routerGo(to, next)
           } else {
             removeToken()
-            next(`/login`)
+            // next(`/login`)
           }
         })
       } else {

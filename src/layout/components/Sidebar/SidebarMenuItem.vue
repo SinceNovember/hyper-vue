@@ -1,18 +1,23 @@
 <template>
     <li v-if="!route.hidden" class="side-nav-item">
         <template v-if="hasChild(route.children)">
-            <router-link ref="tag" :key="route.path" :to="{ path: route.path + '#' + route.name }"
+            <!-- <router-link ref="tag" :key="route.path" :to="{ path: route.path + '/#' + route.name , fullPath: route.fullPath }"
                 data-bs-toggle="collapse" :class="{ 'side-nav-link': !route.parentId }" aria-expanded="false" tag="a">
                 <i v-if="route.meta.icon" :class="route.meta.icon"></i>
                 <span> {{ route.meta.title }} </span>
                 <span v-if="route.children.length > 0" class="menu-arrow"></span>
-            </router-link>
+            </router-link> -->
+            <a :href="'#' + route.name"  data-bs-toggle="collapse"  aria-expanded="false" :class="{ 'side-nav-link': !route.parentId }">
+                <i v-if="route.meta.icon" :class="route.meta.icon"></i>
+                <span> {{ route.meta.title }}</span>
+                <span v-if="route.children.length > 0" class="menu-arrow"></span>
+            </a>
         </template>
         <template v-else>
-            <router-link :key="route.path" :to="{ path: route.path }" tag="a"
+            <router-link :key="route.path" :to="{ path: route.path ,  fullPath: route.fullPath }" tag="a"
                 :class="{ 'side-nav-link': !route.parentId }">
                 <i v-if="route.meta.icon" :class="route.meta.icon"></i>
-                <span> {{ route.meta.title }} </span>
+                <span> {{ route.meta.title }}</span>
             </router-link>
         </template>
         <template v-if="hasChild(route.children)">

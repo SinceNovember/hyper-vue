@@ -1,27 +1,10 @@
 <template>
     <div>
-        <!-- start page title -->
-        <div class="row">
-            <div class="col-12">
-                <div class="page-title-box">
-                    <div class="page-title-right">
-                        <ol class="breadcrumb m-0">
-                            <li class="breadcrumb-item"><a href="javascript: void(0);">Hyper</a></li>
-                            <li class="breadcrumb-item"><a href="javascript: void(0);">Base UI</a></li>
-                            <li class="breadcrumb-item active">Modals</li>
-                        </ol>
-                    </div>
-                    <h4 class="page-title">Modals</h4>
-                </div>
-            </div>
-        </div>
-        <!-- end page title -->
-
         <div class="row">
             <div class="col-xl-6">
                 <div class="card">
                     <div class="card-body">
-                        <h4 class="header-title">Bootstrap Modals</h4>
+                        <h4 class="header-title">Bootstrap Modals11</h4>
 
                         <p class="text-muted font-14">
                             A rendered modal with header, body, and set of actions in the footer.

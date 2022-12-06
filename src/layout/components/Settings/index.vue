@@ -1,5 +1,5 @@
 <template>
-    <div class="offcanvas offcanvas-end border-0" :class="{ 'show': isOpened }" tabindex="-1"
+    <div class="offcanvas offcanvas-end border-0" tabindex="-1"
         id="theme-settings-offcanvas">
         <div class="d-flex align-items-center bg-primary p-3 offcanvas-header">
             <h5 class="text-white m-0">Theme Settings</h5>

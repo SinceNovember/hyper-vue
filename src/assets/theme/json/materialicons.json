@@ -1,0 +1,601 @@
+ [{
+    "name": "ab-testing",
+    "hex": "F01C9",
+    "version": "4.0.96"
+}, {
+    "name": "abacus",
+    "hex": "F16E0",
+    "version": "5.9.55"
+}, {
+    "name": "abjad-arabic",
+    "hex": "F1328",
+    "version": "4.9.95"
+}, {
+    "name": "abjad-hebrew",
+    "hex": "F1329",
+    "version": "4.9.95"
+}, {
+    "name": "abugida-devanagari",
+    "hex": "F132A",
+    "version": "4.9.95"
+}, {
+    "name": "abugida-thai",
+    "hex": "F132B",
+    "version": "4.9.95"
+}, {
+    "name": "access-point",
+    "hex": "F0003",
+    "version": "1.5.54"
+}, {
+    "name": "access-point-check",
+    "hex": "F1538",
+    "version": "5.4.55"
+}, {
+    "name": "access-point-minus",
+    "hex": "F1539",
+    "version": "5.4.55"
+}, {
+    "name": "access-point-network",
+    "hex": "F0002",
+    "version": "1.5.54"
+}, {
+    "name": "access-point-network-off",
+    "hex": "F0BE1",
+    "version": "3.2.89"
+}, {
+    "name": "access-point-off",
+    "hex": "F1511",
+    "version": "5.4.55"
+}, {
+    "name": "access-point-plus",
+    "hex": "F153A",
+    "version": "5.4.55"
+}, {
+    "name": "access-point-remove",
+    "hex": "F153B",
+    "version": "5.4.55"
+}, {
+    "name": "account",
+    "hex": "F0004",
+    "version": "1.5.54"
+}, {
+    "name": "account-alert",
+    "hex": "F0005",
+    "version": "1.5.54"
+}, {
+    "name": "account-alert-outline",
+    "hex": "F0B50",
+    "version": "3.0.39"
+}, {
+    "name": "account-arrow-down",
+    "hex": "F1868",
+    "version": "6.2.95"
+}, {
+    "name": "account-arrow-down-outline",
+    "hex": "F1869",
+    "version": "6.2.95"
+}, {
+    "name": "account-arrow-left",
+    "hex": "F0B51",
+    "version": "3.0.39"
+}, {
+    "name": "account-arrow-left-outline",
+    "hex": "F0B52",
+    "version": "3.0.39"
+}, {
+    "name": "account-arrow-right",
+    "hex": "F0B53",
+    "version": "3.0.39"
+}, {
+    "name": "account-arrow-right-outline",
+    "hex": "F0B54",
+    "version": "3.0.39"
+}, {
+    "name": "account-arrow-up",
+    "hex": "F1867",
+    "version": "6.2.95"
+}, {
+    "name": "account-arrow-up-outline",
+    "hex": "F186A",
+    "version": "6.2.95"
+}, {
+    "name": "account-box",
+    "hex": "F0006",
+    "version": "1.5.54"
+}, {
+    "name": "account-box-multiple",
+    "hex": "F0934",
+    "version": "2.4.85"
+}, {
+    "name": "account-box-multiple-outline",
+    "hex": "F100A",
+    "version": "4.1.95"
+}, {
+    "name": "account-box-outline",
+    "hex": "F0007",
+    "version": "1.5.54"
+}, {
+    "name": "account-cancel",
+    "hex": "F12DF",
+    "version": "4.8.95"
+}, {
+    "name": "account-cancel-outline",
+    "hex": "F12E0",
+    "version": "4.8.95"
+}, {
+    "name": "account-cash",
+    "hex": "F1097",
+    "version": "4.2.95"
+}, {
+    "name": "account-cash-outline",
+    "hex": "F1098",
+    "version": "4.2.95"
+}, {
+    "name": "account-check",
+    "hex": "F0008",
+    "version": "1.5.54"
+}, {
+    "name": "account-check-outline",
+    "hex": "F0BE2",
+    "version": "3.2.89"
+}, {
+    "name": "account-child",
+    "hex": "F0A89",
+    "version": "2.7.94"
+}, {
+    "name": "account-child-circle",
+    "hex": "F0A8A",
+    "version": "2.7.94"
+}, {
+    "name": "account-child-outline",
+    "hex": "F10C8",
+    "version": "4.3.95"
+}, {
+    "name": "account-circle",
+    "hex": "F0009",
+    "version": "1.5.54"
+}, {
+    "name": "account-circle-outline",
+    "hex": "F0B55",
+    "version": "3.0.39"
+}, {
+    "name": "account-clock",
+    "hex": "F0B56",
+    "version": "3.0.39"
+}, {
+    "name": "account-clock-outline",
+    "hex": "F0B57",
+    "version": "3.0.39"
+}, {
+    "name": "account-cog",
+    "hex": "F1370",
+    "version": "4.9.95"
+}, {
+    "name": "account-cog-outline",
+    "hex": "F1371",
+    "version": "4.9.95"
+}, {
+    "name": "account-convert",
+    "hex": "F000A",
+    "version": "1.5.54"
+}, {
+    "name": "account-convert-outline",
+    "hex": "F1301",
+    "version": "4.8.95"
+}, {
+    "name": "account-cowboy-hat",
+    "hex": "F0E9B",
+    "version": "3.7.94"
+}, {
+    "name": "account-cowboy-hat-outline",
+    "hex": "F17F3",
+    "version": "6.1.95"
+}, {
+    "name": "account-details",
+    "hex": "F0631",
+    "version": "1.6.50"
+}, {
+    "name": "account-details-outline",
+    "hex": "F1372",
+    "version": "4.9.95"
+}, {
+    "name": "account-edit",
+    "hex": "F06BC",
+    "version": "1.8.36"
+}, {
+    "name": "account-edit-outline",
+    "hex": "F0FFB",
+    "version": "4.0.96"
+}, {
+    "name": "account-eye",
+    "hex": "F0420",
+    "version": "1.5.54"
+}, {
+    "name": "account-eye-outline",
+    "hex": "F127B",
+    "version": "4.7.95"
+}, {
+    "name": "account-filter",
+    "hex": "F0936",
+    "version": "2.4.85"
+}, {
+    "name": "account-filter-outline",
+    "hex": "F0F9D",
+    "version": "4.0.96"
+}, {
+    "name": "account-group",
+    "hex": "F0849",
+    "version": "2.1.99"
+}, {
+    "name": "account-group-outline",
+    "hex": "F0B58",
+    "version": "3.0.39"
+}, {
+    "name": "account-hard-hat",
+    "hex": "F05B5",
+    "version": "1.5.54"
+}, {
+    "name": "account-heart",
+    "hex": "F0899",
+    "version": "2.2.43"
+}, {
+    "name": "account-heart-outline",
+    "hex": "F0BE3",
+    "version": "3.2.89"
+}, {
+    "name": "account-injury",
+    "hex": "F1815",
+    "version": "6.1.95"
+}, {
+    "name": "account-injury-outline",
+    "hex": "F1816",
+    "version": "6.1.95"
+}, {
+    "name": "account-key",
+    "hex": "F000B",
+    "version": "1.5.54"
+}, {
+    "name": "account-key-outline",
+    "hex": "F0BE4",
+    "version": "3.2.89"
+}, {
+    "name": "account-lock",
+    "hex": "F115E",
+    "version": "4.4.95"
+}, {
+    "name": "account-lock-open",
+    "hex": "F1960",
+    "version": "6.5.95"
+}, {
+    "name": "account-lock-open-outline",
+    "hex": "F1961",
+    "version": "6.5.95"
+}, {
+    "name": "account-lock-outline",
+    "hex": "F115F",
+    "version": "4.4.95"
+}, {
+    "name": "account-minus",
+    "hex": "F000D",
+    "version": "1.5.54"
+}, {
+    "name": "account-minus-outline",
+    "hex": "F0AEC",
+    "version": "2.8.94"
+}, {
+    "name": "account-multiple",
+    "hex": "F000E",
+    "version": "1.5.54"
+}, {
+    "name": "account-multiple-check",
+    "hex": "F08C5",
+    "version": "2.3.50"
+}, {
+    "name": "account-multiple-check-outline",
+    "hex": "F11FE",
+    "version": "4.6.95"
+}, {
+    "name": "account-multiple-minus",
+    "hex": "F05D3",
+    "version": "1.5.54"
+}, {
+    "name": "account-multiple-minus-outline",
+    "hex": "F0BE5",
+    "version": "3.2.89"
+}, {
+    "name": "account-multiple-outline",
+    "hex": "F000F",
+    "version": "1.5.54"
+}, {
+    "name": "account-multiple-plus",
+    "hex": "F0010",
+    "version": "1.5.54"
+}, {
+    "name": "account-multiple-plus-outline",
+    "hex": "F0800",
+    "version": "2.1.19"
+}, {
+    "name": "account-multiple-remove",
+    "hex": "F120A",
+    "version": "4.6.95"
+}, {
+    "name": "account-multiple-remove-outline",
+    "hex": "F120B",
+    "version": "4.6.95"
+}, {
+    "name": "account-music",
+    "hex": "F0803",
+    "version": "2.1.19"
+}, {
+    "name": "account-music-outline",
+    "hex": "F0CE9",
+    "version": "3.3.92"
+}, {
+    "name": "account-network",
+    "hex": "F0011",
+    "version": "1.5.54"
+}, {
+    "name": "account-network-outline",
+    "hex": "F0BE6",
+    "version": "3.2.89"
+}, {
+    "name": "account-off",
+    "hex": "F0012",
+    "version": "1.5.54"
+}, {
+    "name": "account-off-outline",
+    "hex": "F0BE7",
+    "version": "3.2.89"
+}, {
+    "name": "account-outline",
+    "hex": "F0013",
+    "version": "1.5.54"
+}, {
+    "name": "account-plus",
+    "hex": "F0014",
+    "version": "1.5.54"
+}, {
+    "name": "account-plus-outline",
+    "hex": "F0801",
+    "version": "2.1.19"
+}, {
+    "name": "account-question",
+    "hex": "F0B59",
+    "version": "3.0.39"
+}, {
+    "name": "account-question-outline",
+    "hex": "F0B5A",
+    "version": "3.0.39"
+}, {
+    "name": "account-reactivate",
+    "hex": "F152B",
+    "version": "5.4.55"
+}, {
+    "name": "account-reactivate-outline",
+    "hex": "F152C",
+    "version": "5.4.55"
+}, {
+    "name": "account-remove",
+    "hex": "F0015",
+    "version": "1.5.54"
+}, {
+    "name": "account-remove-outline",
+    "hex": "F0AED",
+    "version": "2.8.94"
+}, {
+    "name": "account-search",
+    "hex": "F0016",
+    "version": "1.5.54"
+}, {
+    "name": "account-search-outline",
+    "hex": "F0935",
+    "version": "2.4.85"
+}, {
+    "name": "account-settings",
+    "hex": "F0630",
+    "version": "1.6.50"
+}, {
+    "name": "account-settings-outline",
+    "hex": "F10C9",
+    "version": "4.3.95"
+}, {
+    "name": "account-star",
+    "hex": "F0017",
+    "version": "1.5.54"
+}, {
+    "name": "account-star-outline",
+    "hex": "F0BE8",
+    "version": "3.2.89"
+}, {
+    "name": "account-supervisor",
+    "hex": "F0A8B",
+    "version": "2.7.94"
+}, {
+    "name": "account-supervisor-circle",
+    "hex": "F0A8C",
+    "version": "2.7.94"
+}, {
+    "name": "account-supervisor-circle-outline",
+    "hex": "F14EC",
+    "version": "5.4.55"
+}, {
+    "name": "account-supervisor-outline",
+    "hex": "F112D",
+    "version": "4.4.95"
+}, {
+    "name": "account-switch",
+    "hex": "F0019",
+    "version": "1.5.54"
+}, {
+    "name": "account-switch-outline",
+    "hex": "F04CB",
+    "version": "1.5.54"
+}, {
+    "name": "account-sync",
+    "hex": "F191B",
+    "version": "6.4.95"
+}, {
+    "name": "account-sync-outline",
+    "hex": "F191C",
+    "version": "6.4.95"
+}, {
+    "name": "account-tie",
+    "hex": "F0CE3",
+    "version": "3.3.92"
+}, {
+    "name": "account-tie-hat",
+    "hex": "F1898",
+    "version": "6.3.95"
+}, {
+    "name": "account-tie-hat-outline",
+    "hex": "F1899",
+    "version": "6.3.95"
+}, {
+    "name": "account-tie-outline",
+    "hex": "F10CA",
+    "version": "4.3.95"
+}, {
+    "name": "account-tie-voice",
+    "hex": "F1308",
+    "version": "4.8.95"
+}, {
+    "name": "account-tie-voice-off",
+    "hex": "F130A",
+    "version": "4.8.95"
+}, {
+    "name": "account-tie-voice-off-outline",
+    "hex": "F130B",
+    "version": "4.8.95"
+}, {
+    "name": "account-tie-voice-outline",
+    "hex": "F1309",
+    "version": "4.8.95"
+}, {
+    "name": "account-voice",
+    "hex": "F05CB",
+    "version": "1.5.54"
+}, {
+    "name": "account-voice-off",
+    "hex": "F0ED4",
+    "version": "3.7.95"
+}, {
+    "name": "account-wrench",
+    "hex": "F189A",
+    "version": "6.3.95"
+}, {
+    "name": "account-wrench-outline",
+    "hex": "F189B",
+    "version": "6.3.95"
+}, {
+    "name": "adjust",
+    "hex": "F001A",
+    "version": "1.5.54"
+}, {
+    "name": "advertisements",
+    "hex": "F192A",
+    "version": "6.4.95"
+}, {
+    "name": "advertisements-off",
+    "hex": "F192B",
+    "version": "6.4.95"
+}, {
+    "name": "air-conditioner",
+    "hex": "F001B",
+    "version": "1.5.54"
+}, {
+    "name": "air-filter",
+    "hex": "F0D43",
+    "version": "3.4.93"
+}, {
+    "name": "air-horn",
+    "hex": "F0DAC",
+    "version": "3.5.94"
+}, {
+    "name": "air-humidifier",
+    "hex": "F1099",
+    "version": "4.2.95"
+}, {
+    "name": "air-humidifier-off",
+    "hex": "F1466",
+    "version": "5.2.45"
+}, {
+    "name": "air-purifier",
+    "hex": "F0D44",
+    "version": "3.4.93"
+}, {
+    "name": "airbag",
+    "hex": "F0BE9",
+    "version": "3.2.89"
+}, {
+    "name": "airballoon",
+    "hex": "F001C",
+    "version": "1.5.54"
+}, {
+    "name": "airballoon-outline",
+    "hex": "F100B",
+    "version": "4.1.95"
+}, {
+    "name": "airplane",
+    "hex": "F001D",
+    "version": "1.5.54"
+}, {
+    "name": "airplane-alert",
+    "hex": "F187A",
+    "version": "6.2.95"
+}, {
+    "name": "airplane-check",
+    "hex": "F187B",
+    "version": "6.2.95"
+}, {
+    "name": "airplane-clock",
+    "hex": "F187C",
+    "version": "6.2.95"
+}, {
+    "name": "airplane-cog",
+    "hex": "F187D",
+    "version": "6.2.95"
+}, {
+    "name": "airplane-edit",
+    "hex": "F187E",
+    "version": "6.2.95"
+}, {
+    "name": "airplane-landing",
+    "hex": "F05D4",
+    "version": "1.5.54"
+}, {
+    "name": "airplane-marker",
+    "hex": "F187F",
+    "version": "6.2.95"
+}, {
+    "name": "airplane-minus",
+    "hex": "F1880",
+    "version": "6.2.95"
+}, {
+    "name": "airplane-off",
+    "hex": "F001E",
+    "version": "1.5.54"
+}, {
+    "name": "airplane-plus",
+    "hex": "F1881",
+    "version": "6.2.95"
+}, {
+    "name": "airplane-remove",
+    "hex": "F1882",
+    "version": "6.2.95"
+}, {
+    "name": "airplane-search",
+    "hex": "F1883",
+    "version": "6.2.95"
+}, {
+    "name": "airplane-settings",
+    "hex": "F1884",
+    "version": "6.2.95"
+}, {
+    "name": "airplane-takeoff",
+    "hex": "F05D5",
+    "version": "1.5.54"
+}, {
+    "name": "airport",
+    "hex": "F084B",
+    "version": "2.1.99"
+}]

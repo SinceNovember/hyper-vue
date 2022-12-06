@@ -1,0 +1,38 @@
+@import "./iview.scss";
+
+
+label {
+    font-weight: 500;
+}
+
+.icon-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    .ivu-select-dropdown {
+        width: 260px;
+
+        .ivu-select-dropdown-list {
+            display: flex;
+            flex-wrap: wrap;
+
+            .ivu-select-item {
+                padding: 0px;
+
+                i {
+                    margin: 6px;
+                    font-size: 28px;
+                    transition: background .2s ease-in-out;
+                }
+            }
+        }
+    }
+
+    .ivu-select-single {
+        .ivu-select-prefix {
+            padding-left: 0px;
+        }
+  
+    }
+}

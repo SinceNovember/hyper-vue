@@ -7,8 +7,8 @@
         <logo></logo>
 
         <!-- Sidebar Hover Menu Toggle Button -->
-        <button type="button" class="btn button-sm-hover p-0" data-bs-toggle="tooltip" data-bs-placement="right"  @click="fixedSidebar"
-            aria-label="Show Full Sidebar">
+        <button type="button" class="btn button-sm-hover p-0" data-bs-toggle="tooltip" data-bs-placement="right"
+            @click="fixedSidebar" aria-label="Show Full Sidebar">
             <i class="ri-checkbox-blank-circle-line align-middle"></i>
         </button>
 
@@ -98,4 +98,5 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+
 </style>

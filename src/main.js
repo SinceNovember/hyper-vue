@@ -4,15 +4,20 @@ import Vue from 'vue'
 import App from './App'
 import store from './store/index.js'
 import router from './router/index'
+import ViewUI from 'view-design';
 
+import 'view-design/dist/styles/iview.css';
 import '@mdi/font/css/materialdesignicons.css'
 import './assets/theme/css/index.css'
 import 'remixicon/fonts/remixicon.css'
+import '@/styles/index.scss'
 
 import '@/utils/utils.js'
 import '@/assets/theme/js/vendor.js'
 import '@/promission.js'
 import '@/utils/utils.js'
+
+Vue.use(ViewUI);
 
 Vue.config.productionTip = false  
 
