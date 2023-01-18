@@ -281,8 +281,7 @@
     </li>
 
     <li class="notification-list d-none d-md-inline-block">
-      <a class="nav-link" href="#" data-toggle="fullscreen"
-        @click="fullScreen">
+      <a class="nav-link" href="#" data-toggle="fullscreen" @click="fullScreen">
         <i class="ri-fullscreen-line noti-icon"></i>
       </a>
     </li>
@@ -292,11 +291,11 @@
         href="https://coderthemes.com/hyper_2/saas/ui-modals.html#" role="button" aria-haspopup="false"
         aria-expanded="false">
         <span class="account-user-avatar">
-          <img src="@/assets/theme/img/avatar-1.jpg" alt="user-image" class="rounded-circle">
+          <img :src="userInfo.avatar" alt="user-image" class="rounded-circle">
         </span>
         <span>
-          <span class="account-user-name">Dominic Keller</span>
-          <span class="account-position">Founder</span>
+          <span class="account-user-name">{{ userInfo.nickname }}</span>
+          <span class="account-position">{{ userInfo.deptName }}</span>
         </span>
       </a>
       <div class="dropdown-menu dropdown-menu-end dropdown-menu-animated topbar-dropdown-menu profile-dropdown">
@@ -330,7 +329,7 @@
         </a>
 
         <!-- item-->
-        <a href="javascript:void(0);" class="dropdown-item notify-item">
+        <a @click="logout" class="dropdown-item notify-item">
           <i class="mdi mdi-logout me-1"></i>
           <span>Logout</span>
         </a>
@@ -339,7 +338,14 @@
   </ul>
 </template>
 <script>
+import { getUserCookie } from '@/utils/auth'
+
 export default {
+  data() {
+    return {
+      userInfo: JSON.parse(getUserCookie())
+    }
+  },
   methods: {
     toggleTheme() {
       this.$store.dispatch("app/toggleTheme");
@@ -348,6 +354,10 @@ export default {
       if (screenfull.isEnabled && !screenfull.isFullscreen) {
         screenfull.request();
       }
+    },
+    async logout() {
+      await this.$store.dispatch("user/logout");
+      this.$router.push(`/login?redirect=${this.$route.fullPath}`);
     }
   }
 }

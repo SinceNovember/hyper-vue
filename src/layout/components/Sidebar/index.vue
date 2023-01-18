@@ -26,9 +26,9 @@
                                 <!-- Leftbar User -->
                                 <div class="leftbar-user">
                                     <a href="https://coderthemes.com/hyper_2/saas/pages-profile.html">
-                                        <img src="@/assets/theme/img/avatar-1.jpg" alt="user-image" height="42"
+                                        <img :src="userInfo.avatar" alt="user-image" height="42"
                                             class="rounded-circle shadow-sm">
-                                        <span class="leftbar-user-name">Dominic Keller</span>
+                                        <span class="leftbar-user-name">{{userInfo.nickname}}</span>
                                     </a>
                                 </div>
 
@@ -68,13 +68,17 @@
 </template>
 
 <script>
+import { getUserCookie } from '@/utils/auth'
+
 import Logo from "./Logo"
 import SidebarMenu from "./SidebarMenu"
+
 export default {
 
     data() {
         return {
-            msg: 'Welcome to Your Vue.js App'
+            msg: 'Welcome to Your Vue.js App',
+            userInfo: JSON.parse(getUserCookie())
         }
     },
     components: {

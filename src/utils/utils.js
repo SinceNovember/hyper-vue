@@ -14,8 +14,6 @@ export function hasShowingChild(children = [], parent) {
     // if (parent.component.name != "Layout") {
     //     return false;
     // }
-    console.log(children)
-    console.log(parent)
     const showingChildren = children.filter(item => {
         if (item.hidden) {
             return false;

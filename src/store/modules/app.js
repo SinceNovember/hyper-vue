@@ -57,9 +57,6 @@ const mutations = {
     changeElementVal('data-theme', state.settings.theme)
   },
   CHANGE_SETTINGS: (state, { name, val }) => {
-
-    console.log(name)
-    console.log(val)
     if (val == 'condensed') {
       state.sidebar.opened = false
       state.settings.sidebarSize.opened = 'default'

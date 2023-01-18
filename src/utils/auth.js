@@ -1,23 +1,29 @@
 import Cookies from 'js-cookie'
 
-const TokenKey = 'Admintory'
+const tokenKey = 'hyper-token',
+  userInfoKey = 'hyper-userInfo'
 
 export function getToken() {
-  return Cookies.get(TokenKey)
+  return Cookies.get(tokenKey)
 }
 
 export function setToken(token) {
-  return Cookies.set(TokenKey, token)
+  return Cookies.set(tokenKey, token)
 }
 
 export function removeToken() {
-  return Cookies.remove(TokenKey)
+  return Cookies.remove(tokenKey)
 }
 
-export function setUserId(userId) {
-  return Cookies.set("userId", userId)
+export function clearToken() {
+  Cookies.remove(tokenKey)
+  Cookies.remove(userInfoKey)
 }
 
-export function getUserId() {
-  return Cookies.get("userId")
+export function setUserCookie(userInfo) {
+  return Cookies.set(userInfoKey, userInfo)
+}
+
+export function getUserCookie() {
+  return Cookies.get(userInfoKey)
 }

@@ -2,6 +2,7 @@ import router from './router/index'
 // import { Message } from 'element-ui'
 const _import = require('./router/_import_' + process.env.NODE_ENV)//获取组件的方法
 import Layout from '@/layout'
+import RouterView from '@/components/RouterView'
 import { getToken, setToken, removeToken } from '@/utils/auth' // get token from cookie
 import { fetchAllMenus } from './api/menu'
 
@@ -11,8 +12,8 @@ import { fetchAllMenus } from './api/menu'
 var getRouter
 const whiteList = ['/login'] // no redirect whitelist
 router.beforeEach(async (to, from, next) => {
+  console.log("1111")
   //从Cookie中获取token
-  setToken('11111')
   const hasToken = getToken()
   // NProgress.start() //加载进度条
   if (hasToken) {
@@ -21,7 +22,6 @@ router.beforeEach(async (to, from, next) => {
     } else {
       if (!getRouter) {
         fetchAllMenus().then(res => {//从数据库获取菜单列表
-          console.log(res)
           res = res.data
           if (res.data && res.data.length > 0) {
             getRouter = res.data
@@ -70,19 +70,22 @@ function getObjArr(name) { //localStorage 获取数组对象的方法
 }
 
 function filterAsyncRouter(asyncRouterMap) { //遍历后台传来的路由字符串，转换为组件对象
-  const accessedRouters = asyncRouterMap.filter(route => {
+  const accessedRouters = asyncRouterMap.filter(route => {  
     if (route.component) {
-      if (route.component === 'Layout') {//Layout组件特殊处理
+      if (route.component === 'Layout' || (!route.parentId && route.children.length > 0)) {//Layout组件特殊处理
         route.component = Layout
+      } else if (route.parentId && route.children.length > 0) { //如果当前不是根菜单，并且包含子菜单，则当前菜单设置为router-view组件
+        route.component = RouterView
       } else {
         try {
           route.component = _import(route.component)
         } catch (e) {
-          console.log(route.component + "文件不存在,请重新设置")
+          console.log(route.component + "文件不存在,请重新设置"+ e)
           // Message.error(route.component + "文件不存在,请重新设置")
           return false;
         }
       }
+      console.log(route)
     }
     if (route.children && route.children.length) {
       route.children = filterAsyncRouter(route.children)

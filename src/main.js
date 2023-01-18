@@ -8,18 +8,19 @@ import ViewUI from 'view-design';
 
 import 'view-design/dist/styles/iview.css';
 import '@mdi/font/css/materialdesignicons.css'
-import './assets/theme/css/index.css'
+import '@/assets/theme/css/index.css'
 import 'remixicon/fonts/remixicon.css'
 import '@/styles/index.scss'
 
 import '@/utils/utils.js'
+import '@/utils/filter.js'
 import '@/assets/theme/js/vendor.js'
 import '@/promission.js'
-import '@/utils/utils.js'
 
 Vue.use(ViewUI);
 
 Vue.config.productionTip = false  
+
 
 
 /* eslint-disable no-new */
