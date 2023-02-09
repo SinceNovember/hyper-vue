@@ -14,6 +14,7 @@ import '@/styles/index.scss'
 
 import '@/utils/utils.js'
 import '@/utils/filter.js'
+import '@/utils/request.js'
 import '@/assets/theme/js/vendor.js'
 import '@/promission.js'
 

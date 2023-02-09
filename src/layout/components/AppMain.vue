@@ -4,9 +4,9 @@
             <!-- Start Content-->
             <div class="container-fluid">
                 <page-title></page-title>
-                <keep-alive>
+                <!-- <keep-alive> -->
                     <router-view :key="key" :include="key"/>
-                </keep-alive>
+                <!-- </keep-alive> -->
             </div>
         </div>
     </div>

@@ -5,6 +5,7 @@ import Layout from '@/layout'
 import RouterView from '@/components/RouterView'
 import { getToken, setToken, removeToken } from '@/utils/auth' // get token from cookie
 import { fetchAllMenus } from './api/menu'
+import { fetchUserMenus } from './api/user'
 
 // import NProgress from 'nprogress' // progress bar
 // import 'nprogress/nprogress.css' // progress bar style
@@ -12,7 +13,7 @@ import { fetchAllMenus } from './api/menu'
 var getRouter
 const whiteList = ['/login'] // no redirect whitelist
 router.beforeEach(async (to, from, next) => {
-  console.log("1111")
+  console.log("routing")
   //从Cookie中获取token
   const hasToken = getToken()
   // NProgress.start() //加载进度条
@@ -21,8 +22,7 @@ router.beforeEach(async (to, from, next) => {
       next({ path: '/' })
     } else {
       if (!getRouter) {
-        fetchAllMenus().then(res => {//从数据库获取菜单列表
-          res = res.data
+        fetchUserMenus().then(res => {//从数据库获取菜单列表
           if (res.data && res.data.length > 0) {
             getRouter = res.data
             //后台拿到路由
@@ -70,7 +70,7 @@ function getObjArr(name) { //localStorage 获取数组对象的方法
 }
 
 function filterAsyncRouter(asyncRouterMap) { //遍历后台传来的路由字符串，转换为组件对象
-  const accessedRouters = asyncRouterMap.filter(route => {  
+  const accessedRouters = asyncRouterMap.filter(route => {
     if (route.component) {
       if (route.component === 'Layout' || (!route.parentId && route.children.length > 0)) {//Layout组件特殊处理
         route.component = Layout
@@ -80,7 +80,7 @@ function filterAsyncRouter(asyncRouterMap) { //遍历后台传来的路由字符
         try {
           route.component = _import(route.component)
         } catch (e) {
-          console.log(route.component + "文件不存在,请重新设置"+ e)
+          console.log(route.component + "文件不存在,请重新设置" + e)
           // Message.error(route.component + "文件不存在,请重新设置")
           return false;
         }

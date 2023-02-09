@@ -2,7 +2,7 @@ import axios from 'axios'
 
 export const fetchPageRoles = params => { return axios.get('/api/system/role/page', { params: params }); };
 
-export const fetchRoleOptions = params => { return axios.get('api/system/role/option'); };
+export const fetchRoleOptionModel = params => { return axios.get('api/system/role/option'); };
 
 export const fetchRoleTreeModel = () => { return axios.get('/api/system/role/tree'); };
 

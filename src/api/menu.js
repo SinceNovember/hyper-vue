@@ -22,7 +22,6 @@ export const updateMenu = params => { return axios.put('/api/system/menu', param
 
 export const deleteMenu = params => { return axios.delete('/api/system/menu', { params: params }); };
 
-
 export const addOrUpdateMenuPermission = params => { return axios.post('/api/system/menu/permission', params); }
 
 

@@ -2,6 +2,8 @@ import axios from 'axios'
 
 export const login  = params => { return axios.post('/api/auth/login', params);};
 
+export const fetchUserMenus = () => { return axios.get('/api/system/user/menu'); };
+
 export const fetchPageUsers = params =>{return axios.get('/api/system/user/page', {params:params});};
 
 export const fetchUsers = params =>{return axios.get('/api/system/user/list', {params:params});};
@@ -12,7 +14,7 @@ export const fetchOnlineUsers = params =>{return axios.get('/api/system/user/onl
 
 export const getUser = params =>{return axios.get('/api/system/user', {params:params});};
 
-export const getCurrentUser = () =>{return axios.get('/api/system/user/current');};
+export const getLoginUserInfo = () =>{return axios.get('/api/auth/userInfo');};
 
 export const getUserByToken = params =>{return axios.get('/api/system/user/token', {params:params});};
 

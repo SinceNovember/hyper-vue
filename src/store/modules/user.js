@@ -1,28 +1,19 @@
-import { login, logout, getUser } from "@/api/user"
-import { getToken, setToken, removeToken, clearToken, setUserCookie } from '@/utils/auth'
+import { login, logout } from "@/api/user"
+import { getToken, setToken, removeToken, clearToken } from '@/utils/auth'
 import { resetRouter } from '@/promission'
 
 const state = {
   userInfo: {},
-  userId: '',
   token: getToken(),
-  name: '',
   avatar: '',
   roles: [],
 }
 const mutations = {
   SET_USERINFO: (state, userInfo) => {
-    console.log(userInfo)
     state.userInfo = userInfo
-  },
-  SET_USERID: (state, userId) => {
-    state.userId = userId
   },
   SET_TOKEN: (state, token) => {
     state.token = token
-  },
-  SET_NAME: (state, name) => {
-    state.name = name
   },
   SET_AVATAR: (state, avatar) => {
     state.avatar = avatar
@@ -34,19 +25,19 @@ const mutations = {
 
 const actions = {
   login({ commit }, userInfo) {
-    const { username, password } = userInfo
+    const { username, password, rememberMe } = userInfo
     return new Promise((resolve, reject) => {
-      login({ username: username.trim(), password: password }).then(response => {
-        const { data } = response
-        if (data.code == 200) {
-          getUser({
-            id: data.data.loginId
-          }).then(res => {
-            setUserCookie(JSON.stringify(res.data.data))
-          })
+      login({
+        username: username.trim(),
+        password: password,
+        rememberMe: rememberMe
+      }).then(res => {
+        if (res.code == 200) {
+          const { tokenValue } = res.data
+          setToken(tokenValue)
           resolve()
         } else {
-          reject(data.msg)
+          reject(res.msg)
         }
       }).catch(error => {
         reject(error)
@@ -64,6 +55,10 @@ const actions = {
         reject(error)
       })
     })
+  },
+
+  saveUserInfo({ commit }, userInfo) {
+    commit('SET_USERINFO', userInfo)
   },
 
   // remove token

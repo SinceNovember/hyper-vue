@@ -36,13 +36,12 @@
                         </div>
                         <div class="mb-3">
                             <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="checkbox-signin">
+                                <input type="checkbox" v-model="loginForm.rememberMe" class="form-check-input" id="checkbox-signin">
                                 <label class="form-check-label" for="checkbox-signin">Remember me</label>
                             </div>
                         </div>
                         <div class="d-grid mb-0 text-center">
-                            <a class="btn btn-primary" @click="handleLogin"><i
-                                    class="mdi mdi-login"></i> Log In </a>
+                            <a class="btn btn-primary" @click="handleLogin"><i class="mdi mdi-login"></i> Log In </a>
                         </div>
                         <!-- social-->
                         <div class="text-center mt-4">
@@ -103,7 +102,8 @@ export default {
         return {
             loginForm: {
                 username: "",
-                password: ""
+                password: "",
+                rememberMe: false,
             },
             ruleValidate: {
                 username: [
@@ -131,53 +131,16 @@ export default {
         handleLogin() {
             console.log(this.loginForm)
             if (!this.loginForm.username || !this.loginForm.password) {
-                this.$Message.warning('账号或密码不能为空!')
+                this.$Message.warning('账号或密码不能为空')
                 return;
             }
             this.$store.dispatch("user/login", this.loginForm).then(() => {
-                console.log('ddddd')
-                console.log("dd")
                 this.redirect = '/user'
                 this.$router.push({
                     path: this.redirect || "/",
                     query: this.otherQuery
                 });
-                // getFirstMenuPermission().then(res => {
-                //     this.redirect = res.data.path;
-                //     this.$router.push({
-                //         path: this.redirect || "/",
-                //         query: this.otherQuery
-                //     });
-                // });
-            }).catch(error => {
-                this.$Message.error(error)
             })
-            // this.$refs['formValidate'].validate((valid) => {
-            //     if (valid) {
-            //         addOrUpdateMenu(this.menuInfo)
-            //             .then(res => {
-            //                 this.search()
-            //                 this.$emit("cancel")
-            //                 this.$Message.success('保存成功')
-            //             })
-            //     }
-            // })
-
-            // this.$refs.loginForm.validate(valid => {
-            //     if (valid) {
-            //         this.$store.dispatch("user/login", this.loginForm).then(() => {
-            //             getFirstMenuPermission().then(res => {
-            //                 this.redirect = res.data.path;
-            //                 this.$router.push({
-            //                     path: this.redirect || "/",
-            //                     query: this.otherQuery
-            //                 });
-            //             });
-            //         });
-            //     } else {
-            //         return false;
-            //     }
-            // });
         },
         getOtherQuery(query) {
             return Object.keys(query).reduce((acc, cur) => {

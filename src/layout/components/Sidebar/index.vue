@@ -28,7 +28,7 @@
                                     <a href="https://coderthemes.com/hyper_2/saas/pages-profile.html">
                                         <img :src="userInfo.avatar" alt="user-image" height="42"
                                             class="rounded-circle shadow-sm">
-                                        <span class="leftbar-user-name">{{userInfo.nickname}}</span>
+                                        <span class="leftbar-user-name">{{ userInfo.nickname }}</span>
                                     </a>
                                 </div>
 
@@ -68,22 +68,22 @@
 </template>
 
 <script>
-import { getUserCookie } from '@/utils/auth'
-
+import { mapGetters } from "vuex"
 import Logo from "./Logo"
 import SidebarMenu from "./SidebarMenu"
 
 export default {
-
     data() {
         return {
             msg: 'Welcome to Your Vue.js App',
-            userInfo: JSON.parse(getUserCookie())
         }
     },
     components: {
         Logo,
         SidebarMenu
+    },
+    computed: {
+        ...mapGetters(["userInfo"]),
     },
     mounted() {
     },

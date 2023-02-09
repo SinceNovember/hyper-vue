@@ -34,8 +34,10 @@
 </template>
   
 <script>
-import { mapGetters } from "vuex";
-import { Sidebar, Navbar, Topnav, AppMain, Settings } from "./components";
+import { getLoginUserInfo } from '@/api/user'
+import { Sidebar, Navbar, Topnav, AppMain, Settings } from "./components"
+import { mapGetters } from "vuex"
+
 export default {
     name: "Layout",
     computed: {
@@ -54,9 +56,14 @@ export default {
         AppMain,
         Settings
     },
+    mounted() {
+        this.loadUserInfo()
+    },
     methods: {
-        closeMask() {
-
+        loadUserInfo() {
+            getLoginUserInfo().then(res => {
+                this.$store.dispatch("user/saveUserInfo", res.data)
+            })
         }
     }
 };

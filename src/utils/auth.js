@@ -1,7 +1,6 @@
 import Cookies from 'js-cookie'
 
-const tokenKey = 'hyper-token',
-  userInfoKey = 'hyper-userInfo'
+const tokenKey = 'Hyper-Token'
 
 export function getToken() {
   return Cookies.get(tokenKey)
@@ -17,13 +16,5 @@ export function removeToken() {
 
 export function clearToken() {
   Cookies.remove(tokenKey)
-  Cookies.remove(userInfoKey)
 }
 
-export function setUserCookie(userInfo) {
-  return Cookies.set(userInfoKey, userInfo)
-}
-
-export function getUserCookie() {
-  return Cookies.get(userInfoKey)
-}

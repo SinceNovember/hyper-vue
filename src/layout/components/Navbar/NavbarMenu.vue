@@ -338,13 +338,16 @@
   </ul>
 </template>
 <script>
-import { getUserCookie } from '@/utils/auth'
+import { mapGetters } from "vuex"
+
 
 export default {
   data() {
     return {
-      userInfo: JSON.parse(getUserCookie())
     }
+  },
+  computed: {
+    ...mapGetters(["userInfo"]),
   },
   methods: {
     toggleTheme() {
